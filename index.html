@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WATCH TOWER - CYBER GRID</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&display=swap');
+:root{--neon:#00f5ff;--bg:#06080f;--line:rgba(0,245,255,.25)}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:#e6f1ff;font-family:'JetBrains Mono',monospace;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(transparent 0 2px, rgba(0,245,255,.07) 2px),linear-gradient(90deg, transparent 0 2px, rgba(0,245,255,.07) 2px);background-size:60px 60px;mask:radial-gradient(800px at 50% 0%, black, transparent 80%)}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 22px;position:relative}
+.top{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--neon);padding:12px 18px;clip-path:polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px));background:rgba(0,245,255,.05)}
+.logo{letter-spacing:.32em;font-weight:800;font-size:13px}
+.nav a{color:var(--neon);text-decoration:none;margin-left:16px;font-size:11px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;margin-top:36px}
+h1{font-size:clamp(42px,8vw,82px);line-height:.88;margin:0;text-transform:uppercase}
+h1 span{color:transparent;-webkit-text-stroke:1px var(--neon);text-shadow:0 0 20px rgba(0,245,255,.6)}
+.sub{opacity:.65;max-width:46ch;line-height:1.6;margin-top:14px;font-size:14px}
+.card{border:1px solid var(--line);background:rgba(0,245,255,.06);padding:20px;backdrop-filter:blur(8px);position:relative}
+.card::after{content:"";position:absolute;top:-1px;right:-1px;width:18px;height:18px;border-top:1px solid var(--neon);border-right:1px solid var(--neon)}
+.btn{display:inline-block;margin-top:18px;padding:13px 22px;background:var(--neon);color:#000;font-weight:800;text-decoration:none;clip-path:polygon(8px 0,100% 0, calc(100% - 8px) 100%,0 100%);box-shadow:0 0 30px rgba(0,245,255,.4)}
+.btn2{display:inline-block;margin-top:10px;padding:10px 18px;border:1px solid var(--neon);color:var(--neon);text-decoration:none;font-size:11px}
+.grid2{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.tag{font-size:10px;letter-spacing:.2em;opacity:.6}
+iframe{width:100%;height:220px;border:1px solid var(--neon);background:#000}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div class="logo">WATCH//TOWER</div><div class="nav"><a href="https://youtube.com/@njatsagiresse5591?si=0Yhf1S_7zC83AJuu" target="_blank">YOUTUBE</a><a href="#live">LIVE</a></div></div>
+
+  <div class="hero">
+    <div>
+      <h1>WATCH<br><span>TOWER</span><br>ONLINE</h1>
+      <p class="sub">Chaîne officielle intégrée. Layout techno & fun en un seul fichier. Déployable en 30s.</p>
+      <a class="btn" href="https://youtube.com/@njatsagiresse5591?si=0Yhf1S_7zC83AJuu" target="_blank">VOIR LA CHAINE →</a><br>
+      <a class="btn2" href="https://youtube.com/@njatsagiresse5591?si=0Yhf1S_7zC83AJuu" target="_blank">youtube.com/@njatsagiresse5591</a>
+      <div style="display:flex;gap:16px;margin-top:16px;font-size:11px;opacity:.7"><span>> uptime: 99.9%</span><span>> signal: strong</span><span>> mode: fun</span></div>
+    </div>
+
+    <div class="card" id="live">
+      <div class="tag">LIVE FEED // YOUTUBE CHANNEL</div>
+      <div style="margin-top:14px">
+        <!-- Tu pourras remplacer l'ID par l'ID de ta dernière vidéo pour l'embed direct -->
+        <iframe src="https://www.youtube.com/embed?listType=user&list=njatsagiresse5591" title="YouTube" allowfullscreen></iframe>
+      </div>
+      <div style="margin-top:12px;font-size:12px;line-height:1.6;opacity:.8">
+        Chaîne: @njatsagiresse5591<br>
+        Clique sur ENTER pour aller direct sur YouTube.
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="card"><div class="tag">01</div><b>OBSERVE</b><div style="opacity:.6;font-size:12px;margin-top:6px">Grille néon + scanlines.</div></div>
+    <div class="card"><div class="tag">02</div><b>TRACK</b><div style="opacity:.6;font-size:12px;margin-top:6px">Tout en CSS, 0 dépendance.</div></div>
+    <div class="card"><div class="tag">03</div><b>DEPLOY</b><div style="opacity:.6;font-size:12px;margin-top:6px">Un seul index.html.</div></div>
+  </div>
+
+  <div style="margin-top:28px;opacity:.35;font-size:10px;letter-spacing:.2em">WATCH TOWER © 2026 — @njatsagiresse5591</div>
+</div>
+</body>
+</html>
